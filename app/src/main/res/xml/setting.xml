@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dede.oneplusscreen.custom.ImagePreference
+        android:key="image"
+        app:src="@drawable/img_test_bg"/>
+
+    <PreferenceCategory
+        android:key="screen_mode"
+        android:title="显示模式">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="SRGB"
+            android:title="sRGB"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="DCI_P3"
+            android:title="DCI_P3"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="Adobe_RGB"
+            android:title="Adobe_RGB"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Electronic_Ink"
+            android:summary="仿水墨屏效果"
+            android:title="Electronic_Ink"/>
+
+        <Preference
+            android:key="normal"
+            android:title="默认"/>
+
+        <Preference
+            android:key="simulate_color_space"
+            android:summary="开启模拟颜色空间，全色盲模式，实现仿水墨屏效果"
+            android:title="开发者选项"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="开机自启（避免重启后显示设置失效）">
+        <Preference
+            android:key="battery_optimizations"
+            android:summary="如何恢复：设置-电池-电池优化"
+            android:title="关闭电池优化"/>
+
+        <Preference
+            android:key="boot_manager"
+            android:summary="打开系统隐藏的开机自启管理（仅限氢、氧ROM）"
+            android:title="开机自启管理"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="桌面图标设置">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="icon_state"
+            android:summary="可以添加快捷磁贴到通知栏，点击来打开此页面"
+            android:title="显示桌面图标"/>
+    </PreferenceCategory>
+</PreferenceScreen>

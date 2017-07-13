@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">One Plus Screen</string>
+    <string name="url">https://git.oschina.net/dede_hu/one-plus-screen</string>
+    <string name="drawer_layout_open">open</string>
+    <string name="drawer_layout_close">close</string>
+    <string name="Electronic_Ink">Electronic Ink</string>
+</resources>
